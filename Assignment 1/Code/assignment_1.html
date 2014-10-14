@@ -1,0 +1,64 @@
+<html>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="square.js"></script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+ uniform float displacement;
+// uniform mat4 modelViewMatrix;
+
+
+void
+main()
+{
+    gl_Position = vPosition;
+
+    fColor = vColor;
+
+    // gl_Position = vPosition;
+    // gl_Position[0] += displacement;
+
+    //gl_Position = modelViewMatrix * vPosition;
+
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+varying vec4 fColor;
+
+void
+main()
+{
+    gl_FragColor = vec4( 0.0, 1.0, 0.0, 1.0 );	//green color
+    gl_FragColor = fColor;	//each vertex has its own color, 
+    							//do interpolation for in-between area
+}
+</script>
+
+
+<script type="text/javascript">
+
+
+</script>
+
+<body>
+<div>
+<canvas id="gl-canvas" width="512" height="512">
+<!-- <canvas id="gl-canvas" width="1200" height="600"> -->
+</canvas>
+<button id="bt_red">RED</button>
+<button id="bt_green">GREEN</button>
+<button id="bt_blue">BLUE</button>
+</div>
+
+
+</body>
+</html>
