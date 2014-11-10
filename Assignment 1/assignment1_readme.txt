@@ -13,12 +13,14 @@ I was able to fulfill the basic requirements of the project by using the code fr
 
 For the extra credit, I was able to 
 	1. Implement an application based color variable passed to the fragment shader
+
 	2. Implement a keyboard method to change the color and redisplay
+
 	3. I was able to switch to a blank screen and switch back to the Sierpinski Gasket, but I was unable to get new points to display
 
 	I found an algorithim for the Mandelbrot fractal, but did not have time to implement it.
 	http://rosettacode.org/wiki/Mandelbrot_set
-	
-	4. Implement a rotation of 10 deg clockwise using the built-in functions in the MV.js file
 
+	4. Implement a rotation of 10 deg clockwise using the built-in functions in the MV.js file
+	
 

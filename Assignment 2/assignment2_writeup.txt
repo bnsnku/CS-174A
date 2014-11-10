@@ -1,0 +1,13 @@
+The code is based off the pong code given in discussion. I managed to implement everything except the orthographic crosshair. 
+
+1. The WebGL window displays without error.
+2. The shader codes are implemented without error.
+3. All 8 cubes are instanced from a single cube, and the color is changed for each one as defined by an array. 
+4. The navigation system works as described in the specifications. I
+5. I changed the viewport in order to make the field of view narrower or wider and for the crosshair, I attempted to get help from Piazza, but I was unable to implement the orthographic view and the crosshair.
+6. I commented my code and implemented functions to make it more readable.
+
+Extra Credit
+1. The cubes are instanced from a single cube and translated to the proper location
+2. The cubes are constantly rotating about their own axis.
+3. The rotations are done using quaternions
